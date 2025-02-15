@@ -1,0 +1,135 @@
+/* Container Style */
+.add-edit-project-container {
+  max-width: 1400px;
+  width: 90%;
+  margin: auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 800px; /* Ensures a minimum height to prevent overlap */
+  height: auto; /* Flexible height */
+  margin-top: 80px;
+}
+
+/* Form Style */
+.add-edit-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Select Field Styling */
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-family: "Poppins";
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Grid Layout for Form Fields */
+.add-edit-project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.add-edit-project-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields Styling */
+.add-edit-project-input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Dates Grid Styling */
+.add-edit-project-dates {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.add-edit-project-dates div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Submit Button Styling */
+.add-edit-project-submit {
+  text-align: center;
+}
+
+.add-edit-project-submit .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Image Handling - Prevent Expansion */
+.add-edit-project-card img {
+  max-width: 100%;
+  max-height: 300px; /* Set max height for images */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Responsive Design - For Tablets (Max Width 768px) */
+@media (max-width: 768px) {
+  .add-edit-project-container {
+    width: 90%; /* Use a wider container on tablets */
+    padding: 20px;
+    margin-top: 60px; /* Adjust margin for smaller screens */
+  }
+  .add-edit-project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+
+  .add-edit-project-dates {
+    grid-template-columns: 1fr; /* Single column for dates on tablet */
+  }
+
+  .add-edit-project-input {
+    font-size: 16px; /* Larger input font size for ease of typing */
+  }
+
+  .add-edit-project-submit .btn {
+    font-size: 14px; /* Adjust button size */
+    padding: 12px 20px;
+  }
+}
+
+/* Responsive Design - For Mobile (Max Width 480px) */
+@media (max-width: 480px) {
+  .add-edit-project-container {
+    width: 95%; /* Full width on mobile */
+    margin-top: 50px; /* Adjust margin for smaller screens */
+  }
+  .add-edit-project-grid {
+    grid-template-columns: 1fr; /* Single column for all fields on mobile */
+  }
+
+  .add-edit-project-dates {
+    grid-template-columns: 1fr; /* Single column for dates on mobile */
+  }
+
+  .add-edit-project-container {
+    padding: 15px; /* Reduce padding on mobile */
+  }
+
+  .add-edit-project-submit .btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+ 

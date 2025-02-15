@@ -23,7 +23,7 @@ const Incident = () => {
     low: ''
 });
 const [file, setFile] = useState(null);
-  // const [token, setToken] = useState('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'); // Your GitHub token
+  const [token, setToken] = useState('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'); 
 
   const handleFileChangeg= (e) => {
     setFile(e.target.files[0]);
